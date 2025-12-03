@@ -24,8 +24,8 @@
 
 .nav-link {
     position: relative;
-    display: flex;                   
-    gap: 25px; 
+    display: flex;
+    gap: 25px;
     font-weight: 300;
     margin-right: 780px;
     text-decoration: none;
@@ -41,43 +41,146 @@
 }
 
 
-.nav-link .search{
+.nav-link .search {
     background: rgb(46, 43, 43);
     border: none;
     border-radius: 15px;
     margin-left: 15px;
 }
 
-.menu li{
+
+.menu li {
     margin: 50px 0px 0px;
-    
+
 }
 
-.menu a{
+.menu a {
     position: absolute;
     color: aliceblue;
     text-decoration: none;
-    margin: 0px 60px ;
+    margin: 0px 60px;
     padding: 0px;
     font-weight: 400;
     font-size: 16px;
 }
 
-.shop-logo {
-    list-style: none;
+
+.icons {
+    position: fixed;
+    top: 69px;
+    right: 15%;
+    margin: 0;
+    padding: 0;
 }
 
- .shop-logo ul {
-    margin: 2px ;
-    margin-left: 0px;
-    display: flex;
-    gap: 15px;
-
-}
-.shop-logo li a{
+.icons a {
     color: aliceblue;
-    margin-right: 0px ;
-} 
+    margin: 8px;
+    text-decoration: none;
+
+}
+
+.icons .icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.icons .slash {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    color: grey;
+    font-size: 35px;
+}
+
+.slash {
+    position: absolute;
+    top: 67px;
+    right: 225px;
+    width: 2px;
+    height: 50px;
+    background: grey;
+    border-radius: 2px;
+
+}
+
+.circle {
+    position: absolute;
+    top: 67px;
+    right: 150px;
+    background: rgb(46, 46, 46);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+    /* padding: 15px; */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle ion-icon {
+    font-size: 24px;
+    color: aliceblue;
+    background: transparent;
+}
+
+.circle-2 {
+    position: absolute;
+    top: 67px;
+    right: 70px;
+    background: rgb(46, 46, 46);
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider {
+    width:70%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.slides {
+    width: 400%;            
+    height: 100%;
+    display: flex;
+    animation: slide 10s infinite;  
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+}
 
 
+/* .shop-logo li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 
+
+} */
+
+.shop-logo li a {
+    color: aliceblue;
+
+}
